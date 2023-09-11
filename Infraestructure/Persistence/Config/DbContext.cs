@@ -68,13 +68,13 @@ namespace Infraestructure.Persistence.Config
                 .HasMaxLength(50)
                 .IsRequired();
                 entity.Property(pel => pel.Sinopsis)
-                .HasMaxLength(1000)
+                .HasMaxLength(255)
                 .IsRequired();
                 entity.Property(pel => pel.Poster)
-                .HasMaxLength(200)
+                .HasMaxLength(100)
                 .IsRequired();
                 entity.Property(pel => pel.Trailer)
-                .HasMaxLength(200)
+                .HasMaxLength(100)
                 .IsRequired();
             });
 
